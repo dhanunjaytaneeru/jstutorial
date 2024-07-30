@@ -1,0 +1,139 @@
+
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f3f3f3;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    height: 80%;
+    background: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.left {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.left .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #6c63ff;
+    margin-bottom: 20px;
+}
+
+.left h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.left p {
+    color: #777;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form .options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+form button {
+    padding: 10px;
+    border: none;
+    background-color: #6c63ff;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background-color: #5753c9;
+}
+
+form p {
+    margin-top: 20px;
+    text-align: center;
+}
+
+form p a {
+    color: #6c63ff;
+    text-decoration: none;
+}
+
+.right {
+    width: 50%;
+    background-color: #6c63ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        width: 90%;
+        background-color: red;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        background-color: rebeccapurple;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        background-color: rgb(206, 122, 13);
+        width: 90%;
+        flex-direction: column;
+    }
+    .left, .right {
+        width: 100%;
+    }
+    .right {
+        display: none;
+    }
+    .left {
+        padding: 20px;
+    }
+    form input, form button {
+        font-size: 14px;
+    }
+}
